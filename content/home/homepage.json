@@ -1,7 +1,20 @@
 {
   "title": "Home",
-  "intro": "Hey!",
   "content": "intro.md",
+  "tabs": [
+    {
+      "title": "Home",
+      "link": "#home"
+    },
+    {
+      "title": "Experience",
+      "link": "#experience"
+    },
+    {
+      "title": "Projects",
+      "link": "#projects"
+    }
+  ],
   "gallery": [
     {
       "title": "React Context",

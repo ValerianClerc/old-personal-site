@@ -11,5 +11,6 @@ module.exports = {
   // logo: path.resolve(__dirname, 'src/images/icon.png'),
   social: {
     twitter: `valerian__c`,
+    fbAppId: `valerian__c`,
   },
 };
