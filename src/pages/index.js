@@ -7,11 +7,15 @@ import Gallery from 'components/gallery';
 import IOExample from 'components/io-example';
 import Modal from 'containers/modal';
 import { graphql } from 'gatsby';
+import Spacer from '../components/spacer/spacer';
 
 const Index = ({ data }) => (
   <Layout>
     <Box>
-      <Title as="h2" size="large">
+      <Title as="h1" size="large">
+        Hey!
+      </Title>
+      <Title as="h2">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
       <Modal>
@@ -25,7 +29,7 @@ const Index = ({ data }) => (
       </Modal>
     </Box>
     <Gallery items={data.homeJson.gallery} />
-    <div style={{ height: '50vh' }} />
+    <Spacer />
     <IOExample />
   </Layout>
 );

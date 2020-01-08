@@ -1,1 +1,1 @@
-An opinionated starter for using Gatsby v2 with React Context, tag-agnostic styled-components, page transitions and scroll events with IntersectionObserver.
+I’m Valerian, a computer science student at McGill University. I’m passionate about exploring and creating with technology.
