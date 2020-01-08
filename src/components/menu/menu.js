@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Text, Sticky } from './menu.css';
+import { Container, Sticky } from './menu.css';
 import Tab from "./tab/tab";
 
 const Menu = ({ items }) => (

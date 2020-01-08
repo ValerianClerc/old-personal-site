@@ -4,7 +4,6 @@ import MEDIA from 'helpers/mediaTemplates';
 export const Sticky = styled.div`
     position: fixed;
     top: 20%;
-    width: 100%;
 `;
 
 export const Container = styled.div`
@@ -18,8 +17,3 @@ export const Container = styled.div`
     display: block;
   `};
 `;
-
-
-
-export const Text = styled.div`
-`

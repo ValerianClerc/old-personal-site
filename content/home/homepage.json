@@ -15,6 +15,43 @@
       "link": "#projects"
     }
   ],
+  "experiences": [
+    {},
+    {
+      "company": "Compete McGill",
+      "jobTitle": "VP Development",
+      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      "dates": "Sep 2019 - present"
+    },
+    {},
+    {
+      "company": "CS Undergraduate Society",
+      "jobTitle": "Computer Science Tutor",
+      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      "dates": "Sep 2019 - present"
+    },
+    {},
+    {
+      "company": "IBM Cloud",
+      "jobTitle": "Software Engineer Intern",
+      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      "dates": "May 2019 - Aug 2019"
+    },
+    {},
+    {
+      "company": "Modulis VoIP",
+      "jobTitle": "Full-stack Developer Intern",
+      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      "dates": "Nov 2018 - May 2019"
+    },
+    {},
+    {
+      "company": "iGEM McGill",
+      "jobTitle": "Research Team Lead",
+      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      "dates": "Apr 2018 - May 2019"
+    }
+  ],
   "gallery": [
     {
       "title": "React Context",

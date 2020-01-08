@@ -4,12 +4,12 @@ import Box from "../box/box";
 import Title from "../title/title";
 
 const Intro = ({ data }) => (
-  <Box>
+  <div>
     <Title as="h1" size="large">Hey!</Title>
     <Title as="h2">
       {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
     </Title>
-  </Box>
+  </div>
 )
 
 Intro.propTypes = {

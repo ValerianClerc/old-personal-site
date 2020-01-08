@@ -36,9 +36,13 @@ const Index = ({ data }) => (
         row="1/3"
       >
 
-        <Intro data={data}></Intro>
-        <Experience data={data}></Experience>
-        <Projects data={data}></Projects>
+        <Box>
+          <Intro data={data}></Intro>
+          <Spacer />
+          <Experience data={data}></Experience>
+          <Spacer />
+          <Projects data={data}></Projects>
+        </Box>
 
         <Spacer />
         <IOExample />
@@ -66,6 +70,12 @@ export const query = graphql`
       tabs {
         title
         link
+      }
+      experiences {
+        company
+        jobTitle
+        description
+        dates
       }
       gallery {
         title
