@@ -10,6 +10,9 @@ import { graphql } from 'gatsby';
 import Spacer from '../components/spacer/spacer';
 import { Grid, GridItem } from "../components/grid/index";
 import Menu from "../components/menu/menu";
+import Intro from "../components/intro/intro";
+import Experience from '../components/experience/experience';
+import Projects from '../components/projects/projects';
 
 const Index = ({ data }) => (
   <Layout>
@@ -32,22 +35,11 @@ const Index = ({ data }) => (
         column="2"
         row="1/3"
       >
-        <Box>
-          <Title as="h1" size="large">Hey!</Title>
-          <Title as="h2">
-            {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
-          </Title>
-          <Modal>
-            <video
-              src="https://i.imgur.com/gzFqNSW.mp4"
-              playsInline
-              loop
-              autoPlay
-              muted
-            />
-          </Modal>
-        </Box>
-        <Gallery items={data.homeJson.gallery} />
+
+        <Intro data={data}></Intro>
+        <Experience data={data}></Experience>
+        <Projects data={data}></Projects>
+
         <Spacer />
         <IOExample />
       </GridItem>
