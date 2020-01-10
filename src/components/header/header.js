@@ -26,10 +26,10 @@ const Header = ({ title }) => (
   <AnimatedContainer>
     <Container>
       <Link to="/">
-        <Title as="h1">{title}</Title>
+        <Title as="h1" size="large">{title}</Title>
       </Link>
 
-      <Nav />
+      {/* <Nav /> */}
     </Container>
   </AnimatedContainer>
 );
