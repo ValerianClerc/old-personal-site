@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '../box/box';
 import Title from '../title/title';
-import { Wrapper, Item, Circle, ItemWrapper } from './experience.css';
-import { Grid } from '../grid';
+import { Date, Container, Wrapper, Item, Circle, ItemWrapper } from './experience.css';
+import { Grid, GridItem } from '../grid/index';
 import Spacer from "../spacer/spacer";
+import Img from 'gatsby-image';
 
 const Experience = ({ data }) => (
-  <div id="experience">
+  <Container id="experience">
     <Title as="h1" size="large">
       Experience
     </Title>
@@ -16,16 +17,28 @@ const Experience = ({ data }) => (
       {data.homeJson.experiences.map((item, i) => (
         <Box key={i}>
           <Circle></Circle>
-          <Item>
+          <Grid
+            templateColumns="2fr 1fr"
+            gap="30px"
+          >
+            <GridItem>
+              <Item>
+                <Title size="bold">{item.company} </Title>
+                <Title>{item.jobTitle} </Title>
+                <Title>{item.description}</Title>
+              </Item>
+            </GridItem>
+            <GridItem>
+              <figure>
+                <Img fluid={item.image ? item.image.childImageSharp.fluid : {}} alt={item.company} />
+              </figure>
+            </GridItem>
+          </Grid>
 
-            <Title size="bold">{item.company} </Title>
-            <Title>{item.jobTitle} </Title>
-            <Title>{item.description}</Title>
-          </Item>
         </Box>
       ))}
     </Wrapper>
-  </div>
+  </Container>
 );
 
 Experience.propTypes = {

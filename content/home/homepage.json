@@ -24,53 +24,63 @@
     {
       "company": "Compete McGill",
       "jobTitle": "VP Development",
-      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
-      "dates": "Sep 2019 - present"
+      "description": "I organize and lead hands-on workshops about software development skills and technologies. I am also designing, directing, and implementing a full-stack project for tracking training materials to members of our club",
+      "dates": "Sep 2019 - present",
+      "image": "../images/cp.png"
     },
     {},
     {
       "company": "CS Undergraduate Society",
       "jobTitle": "Computer Science Tutor",
-      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
-      "dates": "Sep 2019 - present"
+      "description": "I tutor my Computer Science peers weekly, helping them understand concepts and assignments from a variety of CS classes.",
+      "dates": "Sep 2019 - present",
+      "image": "../images/csus.png"
     },
     {},
     {
       "company": "IBM Cloud",
       "jobTitle": "Software Engineer Intern",
-      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
-      "dates": "May 2019 - Aug 2019"
+      "description": "I worked on the Networking Tribe to develop a Private DNS product for IBM Cloud. Private DNS is a networking service that only allows specific whitelisted IP addresses to access certain DNS records/domains.",
+      "dates": "May 2019 - Aug 2019",
+      "image": "../images/ibm.png"
     },
     {},
     {
       "company": "Modulis VoIP",
       "jobTitle": "Full-stack Developer Intern",
-      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
-      "dates": "Nov 2018 - May 2019"
+      "description": "I worked on a bunch of projects at Modulis: fullstack features on internal CRM website, machine learning models for predicting call duration, and an open-source FTP-HTTP Proxy server in Golang.",
+      "dates": "Nov 2018 - May 2019",
+      "image": "../images/modulis.png"
     },
     {},
     {
       "company": "iGEM McGill",
       "jobTitle": "Research Team Lead",
-      "description": "blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
-      "dates": "Apr 2018 - May 2019"
+      "description": "I designed, directed, and executed a biomedical research project to bioengineer an antibody-based technology for immuno-oncology therapy. We then earned Bronze medal at an international competition!",
+      "dates": "Apr 2018 - May 2019",
+      "image": "../images/igem.jpg"
     }
   ],
-  "gallery": [
+  "contact": [
     {
-      "title": "React Context",
-      "copy": "For global styles.",
-      "image": "../images/gallery/react-context.jpg"
+      "image": "../images/envelope.png",
+      "content": "valerian.clerc@gmail.com",
+      "link": "mailto:valerian.clerc@gmail.com"
     },
     {
-      "title": "Page Transitions",
-      "copy": "Component-based for easy usage.",
-      "image": "../images/gallery/page-transitions.jpg"
+      "image": "../images/github.png",
+      "content": "@ValerianClerc",
+      "link": "https://github.com/ValerianClerc"
     },
     {
-      "title": "Intersection Observer",
-      "copy": "Including a polyfill for Safari.",
-      "image": "../images/gallery/intersection-observer.jpg"
+      "image": "../images/linkedin.png",
+      "content": "Valerian Clerc",
+      "link": "https://linkedin.com/in/valerian-clerc/"
+    },
+    {
+      "image": "../images/twitter.png",
+      "content": "@valerian__c",
+      "link": "https://twitter.com/valerian__c"
     }
   ]
 }

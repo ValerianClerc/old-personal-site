@@ -28,15 +28,13 @@ const Index = ({ data }) => (
         <Menu items={data.homeJson.tabs}></Menu>
       </GridItem>
       <GridItem column="2" row="1/3">
-        <Box>
-          <Intro data={data}></Intro>
-          <Spacer />
-          <Experience data={data}></Experience>
-          <Spacer />
-          <Projects data={data}></Projects>
-          <Spacer />
-          <Contact></Contact>
-        </Box>
+        <Intro data={data}></Intro>
+        <Spacer />
+        <Experience data={data}></Experience>
+        <Spacer />
+        <Projects data={data}></Projects>
+        <Spacer />
+        <Contact data={data}></Contact>
 
         <Spacer />
         {/* <IOExample /> */}
@@ -70,14 +68,21 @@ export const query = graphql`
         jobTitle
         description
         dates
-      }
-      gallery {
-        title
-        copy
         image {
           childImageSharp {
             fluid(maxHeight: 500, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+      contact {
+        content
+        link
+        image {
+          childImageSharp {
+            fixed(width: 70, height: 70) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
