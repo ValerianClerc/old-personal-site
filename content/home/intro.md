@@ -1,1 +1,0 @@
-I’m Valerian, a computer science student at McGill University. I’m passionate about exploring and creating with technology.
