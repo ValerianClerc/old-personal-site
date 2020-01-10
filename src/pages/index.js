@@ -8,9 +8,9 @@ import IOExample from 'components/io-example';
 import Modal from 'containers/modal';
 import { graphql } from 'gatsby';
 import Spacer from '../components/spacer/spacer';
-import { Grid, GridItem } from "../components/grid/index";
-import Menu from "../components/menu/menu";
-import Intro from "../components/intro/intro";
+import { Grid, GridItem } from '../components/grid/index';
+import Menu from '../components/menu/menu';
+import Intro from '../components/intro/intro';
 import Experience from '../components/experience/experience';
 import Projects from '../components/projects/projects';
 
@@ -21,21 +21,12 @@ const Index = ({ data }) => (
       height="100vh"
       templateColumns="1fr 4fr"
       gap="10px"
-    // autoRows="minmax(100px, auto)"
+      // autoRows="minmax(100px, auto)"
     >
-      <GridItem
-        column="1"
-        row="1/3"
-      >
-        <Menu
-          items={data.homeJson.tabs}
-        ></Menu>
+      <GridItem column="1" row="1/3">
+        <Menu items={data.homeJson.tabs}></Menu>
       </GridItem>
-      <GridItem
-        column="2"
-        row="1/3"
-      >
-
+      <GridItem column="2" row="1/3">
         <Box>
           <Intro data={data}></Intro>
           <Spacer />
@@ -45,10 +36,10 @@ const Index = ({ data }) => (
         </Box>
 
         <Spacer />
-        <IOExample />
+        {/* <IOExample /> */}
       </GridItem>
     </Grid>
-  </Layout >
+  </Layout>
 );
 
 Index.propTypes = {

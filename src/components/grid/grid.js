@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import is from 'styled-is';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Grid = styled.div`
   display: grid;

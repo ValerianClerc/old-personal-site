@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Title } from './tab.css';
+import { Entry } from './tab.css';
 import { Link } from 'gatsby';
 
 const Tab = ({ title, link }) => (
-    <div>
-        <Link to={link}>
-            <Title>{title}</Title>
-        </Link>
-    </div>
+  <div>
+    <Link to={link} style={{ color: 'black', textDecoration: 'none' }}>
+      <Entry>{title}</Entry>
+    </Link>
+  </div>
 );
 
 Tab.propTypes = {
-    title: PropTypes.string,
-    link: PropTypes.string,
+  title: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default Tab;

@@ -9,18 +9,18 @@ export const Circle = styled.div`
   position: absolute;
   margin-left: -15px;
   z-index: 1;
-`
+`;
 
 export const Item = styled.div`
   /* left: 47%; */
   /* position: absolute; */
-`
+`;
 
 export const Wrapper = styled.div`
-::before {
+  ::before {
     left: 25%;
     margin: auto auto auto -5px;
-    content: "";
+    content: '';
     position: absolute;
     top: -10px;
     height: 100%;
@@ -37,5 +37,4 @@ export const Wrapper = styled.div`
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-gap: 4rem;
-
 `;

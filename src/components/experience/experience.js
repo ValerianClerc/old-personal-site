@@ -6,20 +6,25 @@ import { Wrapper, Item, Circle, ItemWrapper } from './experience.css';
 import { Grid } from '../grid';
 
 const Experience = ({ data }) => (
+  <div>
+    <Title as="h1" size="large" id="experience">
+      Experience
+    </Title>
+    <Wrapper id="experience">
+      {data.homeJson.experiences.map((item, i) => (
+        <Box key={i}>
+          <Circle></Circle>
+          <Item>
 
-  <Wrapper id="experience">
-    {data.homeJson.experiences.map((item, i) => (
-      <Box key={i}>
-        <Circle></Circle>
-        <Item>
-          <Title size="bold">{item.company} </Title>
-          <Title>{item.jobTitle} </Title>
-          <Title>{item.description}</Title>
-        </Item>
-      </Box>
-    ))}
-  </Wrapper>
-)
+            <Title size="bold">{item.company} </Title>
+            <Title>{item.jobTitle} </Title>
+            <Title>{item.description}</Title>
+          </Item>
+        </Box>
+      ))}
+    </Wrapper>
+  </div>
+);
 
 Experience.propTypes = {
   data: PropTypes.object.isRequired,

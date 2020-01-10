@@ -24,7 +24,7 @@ export const Text = styled.span`
     }
   }};
   line-height: 1.2;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 
   ${MEDIA.TABLET`
     font-size: ${({ size }) => () => {
