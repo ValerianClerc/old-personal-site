@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '../box/box';
 import Title from '../title/title';
+import Contact from '../contact/contact'
 
 const Intro = ({ data }) => (
   <div>

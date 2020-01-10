@@ -4,12 +4,14 @@ import Box from '../box/box';
 import Title from '../title/title';
 import { Wrapper, Item, Circle, ItemWrapper } from './experience.css';
 import { Grid } from '../grid';
+import Spacer from "../spacer/spacer";
 
 const Experience = ({ data }) => (
-  <div>
-    <Title as="h1" size="large" id="experience">
+  <div id="experience">
+    <Title as="h1" size="large">
       Experience
     </Title>
+    <Spacer height="3vh" />
     <Wrapper id="experience">
       {data.homeJson.experiences.map((item, i) => (
         <Box key={i}>

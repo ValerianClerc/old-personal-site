@@ -13,6 +13,7 @@ import Menu from '../components/menu/menu';
 import Intro from '../components/intro/intro';
 import Experience from '../components/experience/experience';
 import Projects from '../components/projects/projects';
+import Contact from '../components/contact/contact';
 
 const Index = ({ data }) => (
   <Layout>
@@ -21,7 +22,7 @@ const Index = ({ data }) => (
       height="100vh"
       templateColumns="1fr 4fr"
       gap="10px"
-      // autoRows="minmax(100px, auto)"
+    // autoRows="minmax(100px, auto)"
     >
       <GridItem column="1" row="1/3">
         <Menu items={data.homeJson.tabs}></Menu>
@@ -33,6 +34,8 @@ const Index = ({ data }) => (
           <Experience data={data}></Experience>
           <Spacer />
           <Projects data={data}></Projects>
+          <Spacer />
+          <Contact></Contact>
         </Box>
 
         <Spacer />

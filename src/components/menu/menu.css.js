@@ -15,7 +15,4 @@ export const Container = styled.div`
   padding: 0 4rem;
   margin: 3rem 0;
 
-  ${MEDIA.TABLET`
-    display: block;
-  `};
 `;
